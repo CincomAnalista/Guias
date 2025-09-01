@@ -39,9 +39,9 @@ V (Nombre de la sublínea)
 
 Filtrar:
 
-Columna "BASE" O Costo = 0 → eliminar filas.
+Columna Base / Costo = 0 → eliminar filas.
 
-Columna "DEVUELTA" ≠ 0 → restar cantidad devuelta a la cantidad facturada.
+Columna Devuelta ≠ 0 → restar cantidad devuelta a la cantidad facturada.
 
 Dejar todos los valores de Devuelta = 0.
 
@@ -49,17 +49,12 @@ Dejar todos los valores de Devuelta = 0.
 
 Nombre del producto sin RF
 
-Fórmula:
-
-=SI.ERROR(ESPACIOS(IZQUIERDA(J2;HALLAR("RF";J2)-1));J2)
-
+Fórmula: =SI.ERROR(ESPACIOS(IZQUIERDA(J2;HALLAR("RF";J2)-1));J2)
 
 Esta fórmula elimina la “RF” y lo que está después.
 
-Revisar manualmente productos que puedan cortarse (ej: Interface 5777).
+Revisar manualmente productos que puedan cortarse (ejemplo: Interface 5777).
 
 Precio unitario
 
-Calcular:
-
-Base / Cantidad Facturada
+Calcular: Base ÷ Cantidad Facturada
